@@ -227,7 +227,8 @@ section::before{
         text-transform: uppercase;
     }
 
-    .blocks>.padding-medium>h2{
+    .blocks>.padding-medium>h2,
+    .padding-medium{
         text-align: center;
     }
 
