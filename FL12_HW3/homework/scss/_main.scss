@@ -1,0 +1,232 @@
+@mixin link{
+  color: #fff;
+  font-weight:map_get($fontWeights, "m")
+}
+
+@mixin btn {
+  width: 130px;
+  height: 40px;
+  background: $btnColor;
+  border: none;
+  border-radius: 3px;
+  color: $bgColor;
+  padding: 10px 35px;
+  font-weight: map_get($fontWeights, "b");
+}
+
+%logo{
+  @extend %displayFlexRow;
+  img{
+    width: 45px;
+    height: 45px;
+  }
+
+  p{
+    @extend %displayFlexColumn;
+    margin: 0 0 0 10px;
+    text-align: center;
+    font-family: $fontHind;
+    font-weight:  map_get($fontWeights,"b");
+    font-size: 20px;
+    span{
+      font-size: 10px;
+    }
+  }
+}
+
+%underline{
+  content: '';
+  display: block;
+  position: relative;
+  z-index: -1;
+}
+
+%mainWrapper{
+  margin: 0 auto;
+  height: 100%;
+}
+
+%displayFlexRow{
+  display: flex;
+}
+
+%displayFlexColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+%displayFlexRowSpace{
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body{
+  margin: 0;
+  background: $bgColor;
+  color: $textColor;
+}
+
+header{
+  @extend %imgBg;
+  border-radius: 0 0 46% 0;
+  font-family: $fontSource;
+
+  .header-wrap{
+    @extend %mainWrapper;
+    max-width: 80%;
+    padding: 15px 0 95px;
+
+    .landing-logo{
+      @extend %logo;
+    }
+
+    .header_heading{
+      width: 600px;
+      font-size: 65px;
+      font-weight: map_get($fontWeights, "b");
+      line-height: 1;
+      margin: 45px 0 35px 0;
+      position: relative;
+      z-index: 1;
+      &::after{
+        @extend %underline;
+        background: $underlineColor;
+        margin-top: -47px;
+        height: 47px;
+        width: 274px;
+      }
+    }
+
+    .header_text{
+      font-family: $fontHind;
+      font-weight: map_get($fontWeights, "b");
+      font-size: 16px;
+      margin: 0 0 65px -36px;
+      white-space: pre;
+    }
+
+    .header_button{
+      @include btn;
+    }
+  }
+}
+
+a{
+  @include link;
+}
+
+.login{
+  margin-left: 160px;
+}
+
+.section{
+  font-family: $fontSource;
+  text-align: center;
+  margin-top:25px;
+  .section_text{
+    width: 350px;
+    margin: 10px auto;
+    font-weight: map_get($fontWeights, "mm");
+    font-size: 34px;
+    &::after{
+      @extend %underline;
+      margin: -44px 0 0 181px;;
+      background: $underlineColor;
+      height: 38px;
+      width: 153px;
+    }
+  }
+
+  .section_card_wrap{
+    @extend %displayFlexColumn, %mainWrapper;
+    max-width: 60%;
+    position: relative;
+    z-index: -2;
+    .section_card{
+      @extend %displayFlexRowSpace;
+      background: $eggplantColor;
+      color: #fff;
+      border-radius: 5px;
+      position: relative;
+      z-index: 1;
+      .section_card_img{
+        height: 230px;
+      }
+      .section_card_right_container{
+        width: 60%;
+        .section_card_heading{
+          margin: 35px auto;
+          font-size: 20px;
+        }
+        .section_card_text{
+          max-width: 80%;
+          margin: 20px auto;
+          text-align: justify;
+          color: $dirtyWightColor;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+.section_banner{
+  @extend %displayFlexRow;
+  text-align: start;
+  align-items: center;
+  justify-content: space-around;
+  margin: 90px auto -55px;
+  max-width: 65%;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  height: 110px;
+  font-family: $fontSource;
+  background: $gradient;
+  .section_banner_heading{
+    font-weight: map_get($fontWeights, "b");
+    font-size: 22px;
+    margin-bottom: 11px;
+    &::after{
+      @extend %underline;
+      background: $underlineColor;
+      margin-top: -30px;
+      margin-left: 88px;
+      height: 27px;
+      width: 47px;
+    }
+  }
+  .section_banner_text{
+    margin-top: 0;
+    color: $dirtyWightColor;
+    font-size: 14px;
+  }
+
+  .section_banner_button{
+    @include btn;
+  }
+}
+
+.footer{
+  font-family: $fontHind;
+  background: $eggplantColor;
+  color: $dirtyWightColor;
+  position: relative;
+  z-index: -1;
+  padding: 100px 0 20px;
+  .landing-logo{
+    @extend %logo;
+  }
+  .footer-wrap{
+    @extend %displayFlexRow, %mainWrapper;
+    max-width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    .footer_text{
+      width:250px;
+    }
+  }
+}

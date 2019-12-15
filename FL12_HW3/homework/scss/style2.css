@@ -1,0 +1,167 @@
+header {
+  background: no-repeat center url(../img/m-h-night.jpg);
+  background-size: cover; }
+
+header .header-wrap .header_button, .section_banner .section_banner_button {
+  width: 130px;
+  height: 40px;
+  background: #e3ac00;
+  border: none;
+  border-radius: 3px;
+  color: #21232e;
+  padding: 10px 35px;
+  font-weight: 700; }
+
+header .header-wrap .landing-logo img, .footer .landing-logo img {
+  width: 45px;
+  height: 45px; }
+header .header-wrap .landing-logo p, .footer .landing-logo p {
+  margin: 0 0 0 10px;
+  text-align: center;
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  font-size: 20px; }
+  header .header-wrap .landing-logo p span, .footer .landing-logo p span {
+    font-size: 10px; }
+
+header .header-wrap .header_heading::after, .section .section_text::after, .section_banner .section_banner_heading::after {
+  content: '';
+  display: block;
+  position: relative;
+  z-index: -1; }
+
+header .header-wrap, .section .section_card_wrap, .footer .footer-wrap {
+  margin: 0 auto;
+  max-width: 79%;
+  height: 100%; }
+
+header .header-wrap .landing-logo, .footer .landing-logo, .section .section_card_wrap, .section_banner, .footer .footer-wrap {
+  display: flex; }
+
+header .header-wrap .landing-logo p, .footer .landing-logo p, .section .section_card_wrap .section_card .section_card_heading {
+  display: flex;
+  flex-direction: column; }
+
+.section .section_card_wrap .section_card {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+body {
+  margin: 0;
+  background: #21232e;
+  color: #3b3f50; }
+
+header {
+  border-radius: 0 0 46% 0;
+  font-family: "Source Sans Pro", sans-serif; }
+  header .header-wrap {
+    padding: 15px 0 95px; }
+    header .header-wrap .header_heading {
+      width: 600px;
+      font-size: 65px;
+      font-weight: 700;
+      line-height: 1;
+      margin: 45px 0 35px 0;
+      position: relative;
+      z-index: 1; }
+      header .header-wrap .header_heading::after {
+        background: #ff4e33;
+        margin-top: -26px;
+        height: 25px;
+        width: 274px; }
+    header .header-wrap .header_text {
+      font-family: "Hind", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      margin: 0 0 65px -36px;
+      white-space: pre; }
+
+.section {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center; }
+  .section .section_text {
+    width: 350px;
+    margin: 10px auto;
+    font-weight: 600;
+    font-size: 34px; }
+    .section .section_text::after {
+      margin: -18px 0 0 181px;
+      background: #ff4e33;
+      height: 14px;
+      width: 153px; }
+  .section .section_card_wrap {
+    position: relative;
+    z-index: -2; }
+    .section .section_card_wrap .section_card {
+      background: #3b3f50;
+      color: #21232e;
+      border-radius: 5px;
+      position: relative;
+      z-index: 1; }
+      .section .section_card_wrap .section_card .section_card_img {
+        height: 230px; }
+      .section .section_card_wrap .section_card .section_card_heading {
+        width: 150px;
+        height: 10px;
+        margin: 10px auto 0;
+        position: relative;
+        z-index: 1; }
+        .section .section_card_wrap .section_card .section_card_heading .section_card_underline {
+          background: #ff4e33;
+          height: 10px;
+          width: 130px;
+          position: absolute;
+          z-index: -1;
+          margin: 10px 0 0 10px; }
+      .section .section_card_wrap .section_card .section_card_img {
+        border-radius: 5px; }
+      .section .section_card_wrap .section_card .section_card_text {
+        color: #b7c1c8;
+        font-size: 14px; }
+
+.section_banner {
+  text-align: start;
+  align-items: center;
+  justify-content: space-around;
+  margin: 90px auto -55px;
+  max-width: 60%;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  height: 110px;
+  font-family: "Source Sans Pro", sans-serif;
+  background: linear-gradient(45deg, #e1a902, #942f50); }
+  .section_banner .section_banner_heading {
+    color: #3b3f50;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 11px; }
+    .section_banner .section_banner_heading::after {
+      background: #ff4e33;
+      margin-top: -12px;
+      margin-left: 88px;
+      height: 8px;
+      width: 47px; }
+  .section_banner .section_banner_text {
+    margin-top: 0;
+    color: #b7c1c8;
+    font-size: 14px; }
+
+.footer {
+  font-family: "Hind", sans-serif;
+  background: #3b3f50;
+  color: #b7c1c8;
+  position: relative;
+  z-index: -1;
+  padding: 100px 0 20px; }
+  .footer .footer-wrap {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px; }
+    .footer .footer-wrap .footer_text {
+      width: 250px; }
+
+/*# sourceMappingURL=style2.css.map */

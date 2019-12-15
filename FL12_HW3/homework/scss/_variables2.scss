@@ -1,0 +1,16 @@
+$fontWeights: ("l": 400, "m": 500, "mm": 600,  "b": 700, "bb": 900);
+$fontSource: 'Source Sans Pro', sans-serif;
+$fontFresca: 'Fresca', sans-serif;
+$fontHind: 'Hind', sans-serif;
+
+$dirtyWightColor: #b7c1c8;
+$eggplantColor: #3b3f50;
+$textColor: #fff;
+$btnColor: #e4ae00;
+$underlineColor:#ff4d30;
+$bgColor: #21232e;
+$gradient: linear-gradient(45deg, #e1a902, #942f50);
+%imgBg{
+  background: no-repeat center url(../img/m-h-night.jpg);
+  background-size: cover;
+}

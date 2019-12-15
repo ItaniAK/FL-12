@@ -1,0 +1,16 @@
+$fontWeights: ("l": 400, "m": 500, "mm": 600,  "b": 700, "bb": 900);
+$fontSource: 'Source Sans Pro', sans-serif;
+$fontFresca: 'Fresca', sans-serif;
+$fontHind: 'Hind', sans-serif;
+
+$dirtyWightColor: #b7c1c8;
+$eggplantColor: #1c1e2a;
+$textColor: #282b39;
+$btnColor: #699900;
+$underlineColor:#14a0c7;
+$bgColor: #fff;
+$gradient: linear-gradient(45deg, $btnColor, #2c5adb);
+%imgBg{
+  background: no-repeat center url(../img/m-h-day.jpg);
+  background-size: cover;
+}
