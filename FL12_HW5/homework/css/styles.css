@@ -1,0 +1,363 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+/*:root {*/
+/*    --bg-color--dark: #0b192f;*/
+/*    --bg-color--header: #024161;*/
+/*    --link: #fff;*/
+/*    --link--hover: #1f52a4;*/
+/*    --bg-footer-color: #024161;*/
+/*}*/
+
+body {
+    font-family: roboto;
+}
+.post-1 {
+    background: #9d27b0;
+}
+.post-2 {
+    background: #9bb800;
+}
+.post-3 {
+    background: #ed5120;
+}
+.post-4 {
+    background: #9d27b0;
+}
+.post-5 {
+    background: #2d95bb;
+}
+
+/* Your styles go here */
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+body {
+    background: #0b192f;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    color: #fff;
+    display: grid;
+    grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    grid-gap: 15px;
+}
+h2{
+    font-size: 50px;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+p {
+    font-weight: 100;
+}
+p{
+    font-size: 18px;
+}
+.post-0{
+    grid-area: post-header;
+    background: no-repeat center/100% url("../img/post0.jpg");
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.post-0 p{
+    width: 69%;
+    margin-bottom: 35px;
+}
+.hamburger{
+    display: none;
+}
+header .container{
+    grid-area: header;
+    background: #024161;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.header__logo h1 span {
+    color: #d22367;
+}
+header nav ul li{
+    display: inline;
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 28px;
+}
+a:hover{
+    cursor: url(https://img.icons8.com/ios-filled/50/000000/hand-up.png) 22 10, pointer;
+    background: #2f61af;
+}
+main{
+    grid-area: main;
+}
+main .container{
+    display: grid;
+    grid-template-areas:
+            "post-header post-header"
+            "arlicles aside";
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 15px;
+}
+.articles{
+    grid-area: arlicles;
+    position: relative;
+}
+.articles:hover{
+    cursor: url(https://img.icons8.com/ios-filled/50/000000/hand-up.png) 22 10, pointer;
+}
+.post-1:hover img,
+.post-2:hover img,
+.post-3:hover img,
+.post-4:hover img{
+    opacity: 50%;
+}
+.post-text{
+    margin: 40px 75px;
+}
+.post-1,
+.post-3{
+    display: flex;
+    text-align: left;
+}
+.post-2,
+.post-4{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.post-5{
+    height: 150px;
+    padding: 25px 110px 25px 40px;
+}
+.articles article img{
+    width: 49%;
+    height: 327px;
+}
+.date{
+    margin-top: 10px;
+    position: absolute;
+}
+.post-1 .date,
+.post-3 .date,
+.post-5 .date{
+    left: 94%;
+}
+.post-2 .date,
+.post-4 .date{
+    right: 94%;
+}
+.date time{
+    font-size: 30px;
+    opacity: 20%;
+}
+.date time span{
+    font-size: 50px;
+}
+
+aside{
+    grid-area: aside;
+}
+.new-1,
+.new-2{
+    background: #fff;
+}
+aside img{
+    width: 100%;
+}
+.aside-description{
+    color: #000;
+    padding: 32px;
+}
+.aside-description h3{
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0;
+}
+.aside-description p{
+    font-size: 15px;
+    margin-top: 5px;
+}
+footer .container{
+    grid-area: footer;
+    background: #024161;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px 35px 0 35px;
+}
+footer .container p{
+    font-size: 17px;
+    opacity: 20%;
+}
+@media screen and (max-width: 768px){
+    .container{
+        margin: 0 10px;
+    }
+    header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 25px;
+    }
+    header .hamburger{
+        display: flex;
+        flex-direction: column;
+        width: 3%;
+        margin-bottom: 30px;
+    }
+    header .hamburger-item{
+        height: 2px;
+        width: 100%;
+        margin: 3px 0;
+        background: #fff;
+    }
+    h1{
+        margin-bottom: 50px;
+    }
+    nav{
+        display: none;
+    }
+    main .container{
+        grid-template-columns: 2fr 1fr;
+    }
+    .post-0{
+        height: 55%;
+        padding-top: 90px;
+        padding-bottom: 25px;
+    }
+    .post-0 p{
+        width: 90%;
+        font-size: 12px;
+    }
+    .post-1,
+    .post-3,
+    .post-2,
+    .post-4{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .post-1 .date,
+    .post-2 .date,
+    .post-3 .date,
+    .post-4 .date{
+        left: 88%;
+        margin-top: 350px;
+    }
+    .post-text{
+        margin: 40px 48px;
+    }
+    .post-5{
+        height: 330px;
+    }
+    .post-5 .date{
+        left: 45%;
+        margin-top: 250px;
+    }
+
+    .articles article img{
+        width: 100%;
+    }
+    .date{
+        position: absolute;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding-bottom: 15px;
+        margin-bottom: 1px;
+    }
+    footer .container p{
+        text-align: center;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 480px){
+    .container{
+        margin: 0 10px;
+    }
+    header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 25px;
+    }
+    header .hamburger{
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        margin-bottom: 30px;
+    }
+    header .hamburger-item{
+        height: 2px;
+        width: 100%;
+        margin: 3px 0;
+        background: #fff;
+    }
+    nav{
+        display: none;
+    }
+    main .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                "post-header"
+                "arlicles"
+                "aside";
+    }
+    .post-0{
+        height: 90%;
+        background-size: inherit;
+        padding: 35px 61px 0 61px;
+    }
+    .post-0 p{
+        width: 100%;
+        font-size: 15px;
+    }
+    .post-1 .date,
+    .post-2 .date,
+    .post-3 .date,
+    .post-4 .date{
+        left: 86%;
+    }
+    h2{
+        font-size: 47px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .post-5{
+        height: 300px;
+    }
+    .post-5 .date{
+        left: 42%;
+        margin-top: 220px;
+    }
+    h3{
+        font-size: 29px;
+    }
+    footer .container p{
+       font-size: 15px;
+    }
+}
