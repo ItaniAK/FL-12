@@ -1,0 +1,20 @@
+/* Todo: your styles go here*/
+
+.hidden{
+    display: none;
+}
+.shown{
+    display: block;
+}
+.folderColor{
+    color: #EDBC0B;
+}
+.fileColor{
+    color:#BBBBBB;
+}
+ul li{
+    list-style: none;
+}
+.textItalic{
+   font-style: italic;
+}
